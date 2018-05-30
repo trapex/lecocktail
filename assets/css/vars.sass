@@ -1,0 +1,75 @@
+// COLORS
+$white: #fff
+$black: #000
+//$gray: #e1e1e1
+$gray: #35363c
+$gray--light: #f2f2f2
+$gray--dark: #252525
+//$blue: #2e9489
+$blue: #938580
+$blue--dark: #123b37
+$gray--font: #2f3232
+
+// MEDIA QUERIES
+$mobile: "screen and (min-width: 320px) and (max-width: 768px)"
+$tablet: "screen and (min-width: 769px) and (max-width: 1023px)"
+$desktop: "screen and (min-width: 1024px)"
+$tabletdesk: "screen and (min-width: 769px)"
+
+//FONTS
+@font-face
+	font-family: 'Stolzl'
+	src: url("/assets/fonts/StolzlRegular.eot") /* IE9 Compat Modes */
+	src: url("/assets/fonts/StolzlRegular.svg#stolzl") format("svg"),
+	url("/assets/fonts/StolzlRegular.woff") format("woff"),
+	url("/assets/fonts/StolzlRegular.ttf") format("truetype")
+	font-weight: 500
+	font-style: normal
+
+@font-face
+	font-family: 'Stolzl'
+	src: url("/assets/fonts/StolzlBook.eot") /* IE9 Compat Modes */
+	src: url("/assets/fonts/StolzlBook.svg#stolzl") format("svg"),
+	url("/assets/fonts/StolzlBook.woff") format("woff"),
+	url("/assets/fonts/StolzlBook.ttf") format("truetype")
+	font-weight: 400
+	font-style: normal
+
+@font-face
+	font-family: 'Stolzl'
+	src: url("/assets/fonts/StolzlLight.eot") /* IE9 Compat Modes */
+	src: url("/assets/fonts/StolzlLight.svg#stolzl") format("svg"),
+	url("/assets/fonts/StolzlLight.woff") format("woff"),
+	url("/assets/fonts/StolzlLight.ttf") format("truetype")
+	font-weight: 300
+	font-style: normal
+
+//MIXINS
+
+@mixin font($weight: 400)
+	font-family: 'Stolzl', Arial, Helvetica, sans-serif
+	font-weight: $weight
+	font-kerning: none
+
+@mixin customBtn($w: 100px, $h: 40px, $back: #eee, $color: #000)
+	width: $w
+	height: $h
+	line-height: $h
+	background-color: $back
+	padding: 0
+	border: none
+	border-radius: 0
+	color: $color
+	text-transform: uppercase
+	@include font(400)
+	text-align: center
+	filter: brightness(1)
+	transition: filter 0.3s ease-out
+	font-size: 16px
+
+	&:hover
+		filter: brightness(1.2)
+		transition: filter 0.3s ease-in
+
+	&:focus
+		box-shadow: none

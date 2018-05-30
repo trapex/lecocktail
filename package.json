@@ -1,0 +1,33 @@
+{
+  "name": "lecocktail",
+  "version": "1.0.0",
+  "description": "Cocktail",
+  "author": "iNfame",
+  "private": true,
+  "scripts": {
+    "dev": "backpack dev",
+    "build": "nuxt build && backpack build",
+    "start": "cross-env NODE_ENV=production node build/main.js"
+  },
+  "dependencies": {
+    "@nuxtjs/font-awesome": "^1.0.3",
+    "animejs": "^2.2.0",
+    "axios": "^0.16.2",
+    "bulma": "^0.6.2",
+    "cross-env": "^5.0.1",
+    "css-loader": "^0.28.9",
+    "express": "^4.15.3",
+    "nuxt": "^1.2.1",
+    "source-map-support": "^0.4.15",
+    "underscore": "^1.8.3",
+    "vue-multiselect": "^2.0.8",
+    "vue-style-loader": "^3.0.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "backpack-core": "^0.4.1",
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.0-rc.4",
+    "sass-loader": "^6.0.6"
+  }
+}
